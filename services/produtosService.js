@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var postsFilePath = 'db/produtos.json';
+var produtosFilePath = 'db/produtos.json';
 
 var loadFilePosts = function() {
   var fileData = fs.readFileSync(produtosFilePath, 'utf8');
@@ -26,6 +26,6 @@ var saveProduto = function(newPost) {
 }
 
 module.exports = {
-  getPosts: getPosts,
-  savePost: savePost
+  getProdutos: getProdutos,
+  saveProduto: saveProduto
 }
